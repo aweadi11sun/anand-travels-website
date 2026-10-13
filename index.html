@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Travels | Premium Event & Party Bus Packages</title>
+  <meta name="description" content="Charter luxury party buses and event coaches with Anand Travels. Perfect for weddings, club nights, corporate galas, and group getaways with club sound and neon lighting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0b10;
+      --bg-secondary: #121420;
+      --bg-tertiary: #1b1e30;
+      --bg-card: rgba(22, 26, 44, 0.7);
+      --bg-card-hover: rgba(30, 36, 62, 0.85);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent-purple: #8b5cf6;
+      --accent-neon: #06b6d4;
+      --accent-pink: #ec4899;
+      --accent-gold: #f59e0b;
+      --accent-green: #10b981;
+      --gradient-brand: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #06b6d4 100%);
+      --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(139, 92, 246, 0.3);
+      --shadow-glow: 0 0 35px rgba(139, 92, 246, 0.25);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+      min-height: 100vh;
+      background: radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.12) 0%, transparent 40%),
+                  radial-gradient(circle at 85% 65%, rgba(236, 72, 153, 0.1) 0%, transparent 45%),
+                  radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
+                  var(--bg-primary);
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+
+    .gradient-text {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header & Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(10, 11, 16, 0.8);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 800;
+      font-size: 1.4rem;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      background: var(--gradient-brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+    }
+
+    .brand-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gradient-brand);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--gradient-brand);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(236, 72, 153, 0.5);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-main);
+      border-color: var(--border-subtle);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-whatsapp:hover {
+      background: #22bf5b;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border-glow);
+      background: transparent;
+      color: #c4b5fd;
+    }
+
+    .btn-outline:hover {
+      background: rgba(139, 92, 246, 0.15);
+      border-color: var(--accent-purple);
+      color: #fff;
+    }
+
+    /* Mobile Hamburger */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-main);
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 5rem 0 4rem;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #c4b5fd;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent-pink);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-pink);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      margin-bottom: 1.25rem;
+      letter-spacing: -1px;
+    }
+
+    .hero-subhead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-usp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .usp-tag {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .usp-tag svg {
+      width: 14px;
+      height: 14px;
+      color: var(--accent-neon);
+    }
+
+    /* Hero Visual Card */
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-glow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-brand);
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .bus-illustration {
+      background: linear-gradient(135deg, #1e1b4b 0%, #2e1065 50%, #0f172a 100%);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.5rem;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      position: relative;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .neon-lights-bar {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+
+    .neon-bulb {
+      width: 12px;
+      height: 6px;
+      border-radius: 4px;
+      box-shadow: 0 0 10px currentColor;
+    }
+
+    .neon-bulb:nth-child(1) { color: #ec4899; background: #ec4899; }
+    .neon-bulb:nth-child(2) { color: #8b5cf6; background: #8b5cf6; }
+    .neon-bulb:nth-child(3) { color: #06b6d4; background: #06b6d4; }
+    .neon-bulb:nth-child(4) { color: #f59e0b; background: #f59e0b; }
+    .neon-bulb:nth-child(5) { color: #10b981; background: #10b981; }
+
+    .bus-graphic-svg {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      text-align: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .metric-val {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .metric-lbl {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+
+    /* Trust Stats Strip */
+    .trust-strip {
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(18, 20, 32, 0.4);
+      margin-bottom: 5rem;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .trust-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-neon);
+      flex-shrink: 0;
+    }
+
+    .trust-text h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .trust-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-tag {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-neon);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Fleet & Packages Grid */
+    .packages {
+      padding: 4rem 0 6rem;
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 2rem;
+    }
+
+    .package-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      transition: var(--transition);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .package-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-glow);
+      background: var(--bg-card-hover);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+
+    .package-card.featured {
+      border-color: rgba(236, 72, 153, 0.4);
+      box-shadow: 0 0 30px rgba(236, 72, 153, 0.2);
+    }
+
+    .featured-ribbon {
+      position: absolute;
+      top: 18px;
+      right: -32px;
+      background: var(--gradient-brand);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 34px;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .package-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    .package-card.featured .package-icon-wrap {
+      background: rgba(236, 72, 153, 0.15);
+      border-color: rgba(236, 72, 153, 0.4);
+      color: var(--accent-pink);
+    }
+
+    .package-title {
+      font-size: 1.45rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .package-capacity {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-neon);
+      background: rgba(6, 182, 212, 0.1);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+
+    .package-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .package-features {
+      list-style: none;
+      margin-bottom: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .package-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin-bottom: 0.75rem;
+    }
+
+    .package-features svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent-green);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .package-pricing {
+      margin-top: auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .price-value {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .price-note {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      display: block;
+    }
+
+    /* Calculator Section */
+    .calculator-section {
+      padding: 5rem 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(18, 20, 32, 0.6) 50%, transparent 100%);
+    }
+
+    .calc-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+    }
+
+    .calc-controls h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #cbd5e1;
+    }
+
+    .select-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .select-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem 0.75rem;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .select-pill input[type="radio"] {
+      display: none;
+    }
+
+    .select-pill:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .select-pill.active {
+      background: rgba(139, 92, 246, 0.15);
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+    }
+
+    .pill-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+
+    .pill-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .addon-checkboxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .addon-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      transition: var(--transition);
+    }
+
+    .addon-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .addon-item input[type="checkbox"] {
+      accent-color: var(--accent-purple);
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Calculator Result Card */
+    .calc-result-box {
+      background: linear-gradient(145deg, #161a2c 0%, #1e1538 100%);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .result-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--accent-neon);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .result-price-display {
+      margin: 1.5rem 0;
+    }
+
+    .result-amount {
+      font-size: 3rem;
+      font-weight: 800;
+      font-family: 'Space Grotesk', sans-serif;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .result-inclusions {
+      list-style: none;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .result-inclusions li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .result-inclusions svg {
+      width: 14px;
+      height: 14px;
+      color: var(--accent-green);
+    }
+
+    /* Amenities & Features */
+    .amenities-section {
+      padding: 5rem 0;
+    }
+
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .amenity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      transition: var(--transition);
+    }
+
+    .amenity-card:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .amenity-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background: rgba(139, 92, 246, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: var(--accent-purple);
+    }
+
+    .amenity-card h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .amenity-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Steps / How It Works */
+    .steps-section {
+      padding: 5rem 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(18, 20, 32, 0.3);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      position: relative;
+    }
+
+    .step-item {
+      position: relative;
+      padding: 1.5rem;
+    }
+
+    .step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-tertiary);
+      border: 2px solid var(--accent-purple);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-family: 'Space Grotesk', sans-serif;
+      margin-bottom: 1.25rem;
+    }
+
+    .step-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-item p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Testimonials */
+    .reviews-section {
+      padding: 5rem 0;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stars {
+      color: var(--accent-gold);
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      font-size: 1rem;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gradient-brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .reviewer-info h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .reviewer-info span {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 5rem 0;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .faq-question {
+      padding: 1.4rem 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.05rem;
+      user-select: none;
+    }
+
+    .faq-icon {
+      transition: var(--transition);
+      color: var(--accent-purple);
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.75rem 1.4rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Booking & Contact Section */
+    .contact-section {
+      padding: 5rem 0 6rem;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, rgba(22, 26, 44, 0.9) 0%, rgba(30, 20, 50, 0.9) 100%);
+      border: 1px solid var(--border-glow);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      box-shadow: var(--shadow-glow);
+    }
+
+    .contact-info h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .contact-details-list {
+      list-style: none;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-details-list li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 1.25rem;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+    }
+
+    .contact-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: rgba(139, 92, 246, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-neon);
+      flex-shrink: 0;
+    }
+
+    /* Form Styles */
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      background: rgba(10, 11, 16, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 12px rgba(139, 92, 246, 0.3);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    /* Footer */
+    footer {
+      background: #07080c;
+      border-top: 1px solid var(--border-subtle);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      max-width: 320px;
+      line-height: 1.6;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 99;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      animation: bounce 3s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    }
+
+    .floating-whatsapp svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-8px); }
+      60% { transform: translateY(-4px); }
+    }
+
+    /* Toast Notification */
+    .toast-notice {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #10b981;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      font-weight: 600;
+      font-size: 0.95rem;
+      z-index: 1000;
+      opacity: 0;
+      transition: all 0.4s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toast-notice.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-subhead {
+        margin: 0 auto 2rem;
+      }
+      .hero-cta-group, .hero-usp-tags {
+        justify-content: center;
+      }
+      .calc-wrapper {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+      .contact-card {
+        grid-template-columns: 1fr;
+        padding: 2.5rem;
+      }
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .nav-links.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        background: #0e111d;
+        padding: 2rem;
+        border-bottom: 1px solid var(--border-subtle);
+        gap: 1.5rem;
+      }
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .addon-checkboxes {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/>
+          </svg>
+        </div>
+        <span>Anand <span class="gradient-text">Travels</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#packages">Fleet & Packages</a></li>
+        <li><a href="#calculator">Price Calculator</a></li>
+        <li><a href="#amenities">Party Amenities</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#calculator" class="btn btn-outline">Instant Quote</a>
+        <a href="https://wa.me/919822000000?text=Hi%20Anand%20Travels,%20I%20am%20interested%20in%20booking%20a%20package%20bus" target="_blank" class="btn btn-whatsapp">
+          <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.08c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.14 8.14 0 0 1-1.25-4.32c0-4.51 3.67-8.18 8.18-8.18 2.19 0 4.24.85 5.79 2.4a8.13 8.13 0 0 1 2.39 5.78c0 4.51-3.67 8.18-8.18 8.18zm4.49-6.13c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+          WhatsApp Us
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <svg style="width:28px;height:28px;fill:currentColor" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Now Booking 2026-2027 Event & Party Season
+        </div>
+        <h1>Turn Every Journey Into A <span class="gradient-text">Celebration</span></h1>
+        <p class="hero-subhead">
+          Anand Travels brings you luxury chartered coaches customized for weddings, club party nights, corporate offsites, and group getaways. High-wattage club audio, dynamic strobe lighting, and 5-star comfort on wheels.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#calculator" class="btn btn-primary">
+            Calculate Package Price
+            <svg style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#packages" class="btn btn-secondary">Explore Fleet</a>
+        </div>
+
+        <div class="hero-usp-tags">
+          <div class="usp-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            2000W DJ Sound System
+          </div>
+          <div class="usp-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            RGB Party Strobe & Laser Lights
+          </div>
+          <div class="usp-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Vetted Chauffeurs
+          </div>
+          <div class="usp-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            All-Inclusive Toll & Fuel
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <div>
+            <span style="font-size:0.8rem;text-transform:uppercase;color:var(--text-muted);font-weight:700">Flagship Experience</span>
+            <h3 style="font-size:1.25rem;margin-top:2px;">The Anand Club Cruiser</h3>
+          </div>
+          <span style="background:rgba(236,72,153,0.2);color:#f472b6;padding:4px 10px;border-radius:20px;font-size:0.75rem;font-weight:700">VIP Choice</span>
+        </div>
+
+        <div class="bus-illustration">
+          <div class="neon-lights-bar">
+            <div class="neon-bulb"></div>
+            <div class="neon-bulb"></div>
+            <div class="neon-bulb"></div>
+            <div class="neon-bulb"></div>
+            <div class="neon-bulb"></div>
+          </div>
+          <!-- Stylized Bus SVG Graphic -->
+          <svg class="bus-graphic-svg" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="30" width="350" height="95" rx="20" fill="#1e1e38" stroke="#8b5cf6" stroke-width="3"/>
+            <!-- Windows with neon glow -->
+            <rect x="40" y="45" width="45" height="35" rx="6" fill="#06b6d4" opacity="0.65"/>
+            <rect x="95" y="45" width="45" height="35" rx="6" fill="#ec4899" opacity="0.65"/>
+            <rect x="150" y="45" width="45" height="35" rx="6" fill="#8b5cf6" opacity="0.65"/>
+            <rect x="205" y="45" width="45" height="35" rx="6" fill="#06b6d4" opacity="0.65"/>
+            <rect x="260" y="45" width="45" height="35" rx="6" fill="#ec4899" opacity="0.65"/>
+            <path d="M315 45H350C355 45 360 50 360 60V80H315V45Z" fill="#38bdf8" opacity="0.75"/>
+            <!-- Headlights & details -->
+            <circle cx="362" cy="105" r="7" fill="#facc15" filter="drop-shadow(0 0 8px #facc15)"/>
+            <line x1="20" y1="95" x2="370" y2="95" stroke="#ec4899" stroke-width="2"/>
+            <!-- Wheels -->
+            <circle cx="90" cy="125" r="22" fill="#0f172a" stroke="#475569" stroke-width="4"/>
+            <circle cx="90" cy="125" r="10" fill="#8b5cf6"/>
+            <circle cx="290" cy="125" r="22" fill="#0f172a" stroke="#475569" stroke-width="4"/>
+            <circle cx="290" cy="125" r="10" fill="#8b5cf6"/>
+          </svg>
+          <p style="font-size:0.85rem;color:#cbd5e1;margin-top:0.75rem">Custom perimeter lounge seating, chiller box & laser lights</p>
+        </div>
+
+        <div class="hero-metrics">
+          <div>
+            <div class="metric-val">100%</div>
+            <div class="metric-lbl">On-Time Record</div>
+          </div>
+          <div>
+            <div class="metric-val">500+</div>
+            <div class="metric-lbl">Events Hosted</div>
+          </div>
+          <div>
+            <div class="metric-val">4.9 ★</div>
+            <div class="metric-lbl">Google Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div class="trust-text">
+          <h4>Commercial Permits</h4>
+          <p>Full state and national permits with passenger insurance.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 nominal 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        </div>
+        <div class="trust-text">
+          <h4>Guaranteed Punctuality</h4>
+          <p>GPS tracked fleet arrives 30 mins prior to departure.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        </div>
+        <div class="trust-text">
+          <h4>Bluetooth / AUX Control</h4>
+          <p>You control the playlist all night long.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        </div>
+        <div class="trust-text">
+          <h4>Transparent Billing</h4>
+          <p>Zero hidden surcharges. Tolls, fuel, driver fee covered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fleet & Packages Section -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Packages</span>
+        <h2 class="section-title">Designed For Your Biggest Celebrations</h2>
+        <p class="section-desc">Choose from our purpose-built event fleet. Whether it's an intimate birthday bar hop or a 200-guest wedding convoy, Anand Travels has the perfect package.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1 -->
+        <div class="package-card featured">
+          <div class="featured-ribbon">Most Popular</div>
+          <div>
+            <div class="package-icon-wrap">
+              <svg style="width:28px;height:28px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            </div>
+            <span class="package-capacity">20 - 28 Guests</span>
+            <h3 class="package-title">The Neon Party Cruiser</h3>
+            <p class="package-desc">The ultimate mobile dance floor for bachelor/bachelorette bashes, birthday nights, concerts, and club crawls.</p>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                2000W Subwoofer Audio + DJ Bluetooth dock
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                RGB Strobe, Laser FX & Blacklight Ceiling
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Perimeter Leather Lounge & Dance Area
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Onboard Chiller Bar Box with Cup Holders
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Dark Tinted Privacy Windows & Fast AC
+              </li>
+            </ul>
+          </div>
+          <div class="package-pricing">
+            <div>
+              <span class="price-value">₹14,999</span>
+              <span class="price-note">Starting for 6 hrs package</span>
+            </div>
+            <a href="#calculator" class="btn btn-primary" onclick="setCalcPreset('party', 25, 6)">Select</a>
+          </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package-card">
+          <div>
+            <div class="package-icon-wrap">
+              <svg style="width:28px;height:28px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <span class="package-capacity">35 - 45 Guests</span>
+            <h3 class="package-title">Royal Wedding & Baraat Shuttle</h3>
+            <p class="package-desc">Elegant, air-conditioned luxury coaches configured for grand wedding guest transfers, Baraat processions, and multi-venue shuttles.</p>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Spacious legroom (gown & sherwani friendly)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Warm ambient chandelier interior lighting
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Exterior floral ribbon & garland mounting kit
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Huge underbody storage for gift hampers & luggage
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                PA Microphone system for family announcements
+              </li>
+            </ul>
+          </div>
+          <div class="package-pricing">
+            <div>
+              <span class="price-value">₹18,500</span>
+              <span class="price-note">Starting for full day (12 hrs)</span>
+            </div>
+            <a href="#calculator" class="btn btn-secondary" onclick="setCalcPreset('wedding', 40, 12)">Select</a>
+          </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+          <div>
+            <div class="package-icon-wrap">
+              <svg style="width:28px;height:28px" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            </div>
+            <span class="package-capacity">30 - 52 Guests</span>
+            <h3 class="package-title">Corporate Gala & Retreat Coach</h3>
+            <p class="package-desc">Executive business coaches for corporate annual general meetings, tech team retreats, airport delegations, and offsite conventions.</p>
+            <ul class="package-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                High-speed onboard 5G Wi-Fi hotspot
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Individual USB-C charging ports at every seat
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Whisper-quiet air suspension ride quality
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Twin LED screens for corporate video presentations
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Corporate invoicing with GST compliance
+              </li>
+            </ul>
+          </div>
+          <div class="package-pricing">
+            <div>
+              <span class="price-value">₹16,999</span>
+              <span class="price-note">Starting for 8 hrs package</span>
+            </div>
+            <a href="#calculator" class="btn btn-secondary" onclick="setCalcPreset('corporate', 40, 12)">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Price Calculator -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Estimator</span>
+        <h2 class="section-title">Calculate Your Custom Package Quote</h2>
+        <p class="section-desc">Get an immediate, transparent estimate tailored to your event type, headcount, and hours.</p>
+      </div>
+
+      <div class="calc-wrapper">
+        <div class="calc-controls">
+          <h3>Configure Your Bus Package</h3>
+
+          <!-- Step 1: Event Type -->
+          <div class="form-group">
+            <label class="form-label">1. Select Event Type</label>
+            <div class="select-grid" id="eventTypeGrid">
+              <div class="select-pill active" data-type="party" onclick="selectEvent('party', this)">
+                <span class="pill-title">Party / Night Out</span>
+                <span class="pill-sub">Sound & Strobe</span>
+              </div>
+              <div class="select-pill" data-type="wedding" onclick="selectEvent('wedding', this)">
+                <span class="pill-title">Wedding / Baraat</span>
+                <span class="pill-sub">Plush & Spacious</span>
+              </div>
+              <div class="select-pill" data-type="corporate" onclick="selectEvent('corporate', this)">
+                <span class="pill-title">Corporate Offsite</span>
+                <span class="pill-sub">Wi-Fi & Comfort</span>
+              </div>
+              <div class="select-pill" data-type="tour" onclick="selectEvent('tour', this)">
+                <span class="pill-title">Weekend Tour</span>
+                <span class="pill-sub">Multi-day Travel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Bus Size -->
+          <div class="form-group">
+            <label class="form-label">2. Select Bus Capacity</label>
+            <div class="select-grid" id="busSizeGrid">
+              <div class="select-pill" data-size="20" onclick="selectSize(20, this)">
+                <span class="pill-title">20-25 Seater</span>
+                <span class="pill-sub">Mini Party Bus</span>
+              </div>
+              <div class="select-pill active" data-size="35" onclick="selectSize(35, this)">
+                <span class="pill-title">35-40 Seater</span>
+                <span class="pill-sub">Mid Luxury Coach</span>
+              </div>
+              <div class="select-pill" data-size="50" onclick="selectSize(50, this)">
+                <span class="pill-title">45-52 Seater</span>
+                <span class="pill-sub">Grand Cruiser</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Duration -->
+          <div class="form-group">
+            <label class="form-label">3. Duration / Timing</label>
+            <div class="select-grid" id="durationGrid">
+              <div class="select-pill" data-duration="6" onclick="selectDuration(6, this)">
+                <span class="pill-title">6 Hours</span>
+                <span class="pill-sub">Half Day / Night Out</span>
+              </div>
+              <div class="select-pill active" data-duration="12" onclick="selectDuration(12, this)">
+                <span class="pill-title">12 Hours</span>
+                <span class="pill-sub">Full Day Celebration</span>
+              </div>
+              <div class="select-pill" data-duration="24" onclick="selectDuration(24, this)">
+                <span class="pill-title">24 Hours / 2 Days</span>
+                <span class="pill-sub">Weekend Getaway</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Add-ons -->
+          <div class="form-group">
+            <label class="form-label">4. Select Custom Add-ons</label>
+            <div class="addon-checkboxes">
+              <label class="addon-item">
+                <input type="checkbox" id="addonAudio" checked onchange="updateCalc()">
+                <span>Pro DJ & Mic Equipment (+₹2,000)</span>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" id="addonDecor" onchange="updateCalc()">
+                <span>Custom Decor & Balloons (+₹2,500)</span>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" id="addonCooler" checked onchange="updateCalc()">
+                <span>Chiller Box + Ice Supply (+₹1,000)</span>
+              </label>
+              <label class="addon-item">
+                <input type="checkbox" id="addonStops" onchange="updateCalc()">
+                <span>Unlimited Local Stops (+₹1,500)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Display -->
+        <div class="calc-result-box">
+          <div>
+            <span class="result-badge">Instant Estimate</span>
+            <h4 style="font-size:1.3rem;color:#fff;" id="resultPackageName">Party Bus Package (35 Seater)</h4>
+            
+            <div class="result-price-display">
+              <div class="result-amount" id="calcPriceDisplay">₹21,500</div>
+              <span style="font-size:0.85rem;color:var(--text-muted);">Estimated all-inclusive rate</span>
+            </div>
+
+            <ul class="result-inclusions">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Professional Chauffeur & Cleaner
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Standard Fuel Allowance Included
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                City Tolls & Parking Permits covered
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Clean, sanitized interiors before pickup
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <button class="btn btn-whatsapp" style="width:100%;margin-bottom:0.75rem;" onclick="bookViaWhatsApp()">
+              <svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.08c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.14 8.14 0 0 1-1.25-4.32c0-4.51 3.67-8.18 8.18-8.18 2.19 0 4.24.85 5.79 2.4a8.13 8.13 0 0 1 2.39 5.78c0 4.51-3.67 8.18-8.18 8.18zm4.49-6.13c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+              Lock In This Quote on WhatsApp
+            </button>
+            <p style="font-size:0.75rem;color:var(--text-dim);text-align:center;">Instant confirmation • 20% advance booking deposit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Grid -->
+  <section class="amenities-section" id="amenities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Onboard Specs</span>
+        <h2 class="section-title">Built For Non-Stop Energy</h2>
+        <p class="section-desc">Every Anand Travels party coach is equipped with premium nightclub-grade amenities so the fun begins the second your crew steps in.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+          </div>
+          <h4>Thunder Audio System</h4>
+          <p>Multi-channel amplifiers with deep bass subwoofers tuned for crisp playback, wireless karaoke mics, and seamless Bluetooth sync.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5 0 .65.13 1.26.36 1.83l2.92-2.92c-.17-.29-.28-.62-.28-.91 0-1.1.9-2 2-2 .29 0 .62.11.91.28l2.92-2.92C13.26 7.13 12.65 7 12 7zM2 12c0 5.52 4.48 10 10 10s10-4.48 10-10S17.52 2 12 2 2 6.48 2 12zm18 0c0 4.41-3.59 8-8 8s-8-3.59-8-8 3.59-8 8-8 8 3.59 8 8z"/></svg>
+          </div>
+          <h4>Dynamic Neon FX</h4>
+          <p>Sound-reactive LED strips, ceiling galaxy star-lights, and laser sweeps that transform the interior into a private VIP lounge.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+          </div>
+          <h4>Dual Turbo Climate AC</h4>
+          <p>Heavy-duty dual compressors ensure freezing air conditioning even in peak summer heat and crowded party conditions.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/></svg>
+          </div>
+          <h4>Chiller Bar & Cups</h4>
+          <p>Dedicated insulated ice storage chests to keep soft drinks, mocktails, juices, and celebratory beverages frosty all trip long.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm1 19c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h8c.55 0 1 .45 1 1v16z"/></svg>
+          </div>
+          <h4>Fast Multi-Device Power</h4>
+          <p>Keep your cameras and phones 100% charged for Instagram and TikTok with USB fast chargers installed at each seating zone.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <h4>GPS Tracking & Safety</h4>
+          <p>Real-time vehicle location sharing for event hosts, fire safety equipment, first-aid kits, and trained security-vetted drivers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="steps-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Smooth Process</span>
+        <h2 class="section-title">How To Book Your Party Coach</h2>
+        <p class="section-desc">Booking an event bus with Anand Travels takes just 4 hassle-free steps.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <h4>Pick Bus & Date</h4>
+          <p>Choose your vehicle size, event date, and pickup location based on your party headcount.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <h4>Customize Perks</h4>
+          <p>Select your music setup, custom floral or balloon decorations, and special routing preferences.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <h4>Confirm Quote</h4>
+          <p>Review your all-inclusive transparent invoice and lock in the bus with a nominal 20% advance.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <h4>Celebrate & Ride</h4>
+          <p>Your gleaming party coach arrives 30 minutes early, pristine, chilled, and ready to party.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews / Social Proof -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Feedback</span>
+        <h2 class="section-title">Loved By 500+ Event Organizers</h2>
+        <p class="section-desc">See why wedding planners and party hosts rely on Anand Travels for group transportation.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"We chartered the Neon Party Cruiser for my sister's 25th birthday party bar hop. The sound system was incredible, and the driver was so accommodating with our itinerary stops. 10/10 experience!"</p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="avatar-circle">RP</div>
+            <div class="reviewer-info">
+              <h5>Rohan Patil</h5>
+              <span>Birthday Event Organizer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"We booked 3 luxury wedding coaches from Anand Travels for our destination wedding in Lonavala. Every bus arrived ahead of schedule, impeccably clean, with cold AC. Our guests were raving about the comfort."</p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="avatar-circle">AD</div>
+            <div class="reviewer-info">
+              <h5>Ananya & Dev</h5>
+              <span>Wedding Couple</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Flawless corporate shuttle service for our company annual retreat. On-time pickup, Wi-Fi worked seamlessly, and the GST billing was fast and straightforward. Anand Travels is our permanent partner now."</p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="avatar-circle">VK</div>
+            <div class="reviewer-info">
+              <h5>Vikram Kulkarni</h5>
+              <span>HR Director, TechCorp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about chartering with Anand Travels.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Can we play our own music and connect via Bluetooth?</span>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes, absolutely! All our party coaches are equipped with high-end digital Bluetooth receivers, AUX cables, and USB connections. You have 100% control over the playlist, volume, and vibe throughout your journey.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Are tolls, fuel, and driver charges included in the price?</span>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes! Our quotes are fully transparent. Standard package rates include fuel for the agreed kilometers/hours, highway toll taxes, parking permits, and driver bata/allowance. No surprise charges at the end of the trip.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>What is the policy for food, drinks, and snacks onboard?</span>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              You are welcome to bring dry snacks, finger food, cake, and beverages onboard. We provide ice coolers and trash bins. We only request guests maintain reasonable cleanliness. Alcohol permits depend on local regional laws.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>How far in advance should we reserve the bus?</span>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              For peak wedding dates (November to February) and weekend party nights, we recommend booking 2 to 4 weeks in advance. For weekday events or corporate offsites, 5 to 7 days notice is usually sufficient.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Can we add custom decorations like banners or balloons?</span>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes! You can either arrive 30 minutes before departure to decorate the bus with your team, or select our Custom Decor Add-on during booking and our crew will have the bus pre-decorated for your celebration.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="section-tag">Direct Inquiry</span>
+          <h3>Let's Plan Your Event Journey</h3>
+          <p>Fill out this quick form or reach out directly via WhatsApp/Call. Our event logistics specialist will respond within 15 minutes with vehicle availability.</p>
+
+          <ul class="contact-details-list">
+            <li>
+              <div class="contact-icon-box">
+                <svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <strong>Call / WhatsApp:</strong>
+                <div>+91 98220 00000 / +91 98220 11111</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon-box">
+                <svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <strong>Email:</strong>
+                <div>bookings@anandtravels.in</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon-box">
+                <svg style="width:20px;height:20px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <strong>Main Operations Depot:</strong>
+                <div>Anand Travels Terminal, Station Road, Central Hub</div>
+              </div>
+            </li>
+          </ul>
+
+          <div style="background:rgba(255,255,255,0.04);border-radius:var(--radius-sm);padding:1rem;border:1px solid var(--border-subtle)">
+            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">
+              ✨ <strong>Fast Response Promise:</strong> We operate 24x7 for active event transit support and road assistance.
+            </p>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div>
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-input" id="formName" required placeholder="e.g. Rahul Sharma">
+            </div>
+            <div>
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" class="form-input" id="formPhone" required placeholder="e.g. 98765 43210">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label class="form-label">Event Date *</label>
+              <input type="date" class="form-input" id="formDate" required>
+            </div>
+            <div>
+              <label class="form-label">Event Type</label>
+              <select class="form-select" id="formEventType">
+                <option value="Party Bus">Party / Club Crawl</option>
+                <option value="Wedding / Baraat">Wedding / Baraat Shuttle</option>
+                <option value="Corporate Event">Corporate Offsite / Retreat</option>
+                <option value="Weekend Getaway">Weekend Getaway Tour</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label class="form-label">Expected Guest Count</label>
+              <select class="form-select" id="formGuests">
+                <option value="15-25 Guests">15 - 25 Guests (Mini Coach)</option>
+                <option value="26-40 Guests" selected>26 - 40 Guests (Luxury Coach)</option>
+                <option value="41-55 Guests">41 - 55 Guests (Grand Cruiser)</option>
+                <option value="55+ Guests">55+ Guests (Multiple Buses)</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Pickup City / Area</label>
+              <input type="text" class="form-input" id="formCity" placeholder="e.g. Pune, Mumbai, Nashik">
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label">Special Requests / Route Notes</label>
+            <textarea class="form-textarea" id="formNotes" placeholder="Tell us about special music requirements, decor, multiple stops, or timing..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem;">
+            Submit Booking Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/></svg>
+            </div>
+            <span>Anand <span class="gradient-text">Travels</span></span>
+          </a>
+          <p>
+            Anand Travels specializes in premium, experiential bus rentals for parties, weddings, corporate galas, and road trips. Transforming ordinary group transit into unforgettable celebrations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Event Packages</h4>
+          <ul class="footer-links">
+            <li><a href="#packages">Neon Party Bus</a></li>
+            <li><a href="#packages">Wedding Baraat Shuttles</a></li>
+            <li><a href="#packages">Corporate Retreats</a></li>
+            <li><a href="#packages">Weekend Group Tours</a></li>
+            <li><a href="#calculator">Custom Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#calculator">Instant Cost Calculator</a></li>
+            <li><a href="#amenities">Onboard Amenities</a></li>
+            <li><a href="#how-it-works">Booking Process</a></li>
+            <li><a href="#reviews">Client Testimonials</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Depots</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919822000000">+91 98220 00000</a></li>
+            <li><a href="mailto:bookings@anandtravels.in">bookings@anandtravels.in</a></li>
+            <li><a href="#contact">24/7 Operations Desk</a></li>
+            <li><a href="#contact">Fleet Inspection Visit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Anand Travels Pvt. Ltd. All rights reserved. Commercial Carriage License Verified.</p>
+        <p>Built for GitHub & Cloudflare Pages deployment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/919822000000?text=Hi%20Anand%20Travels,%20I'm%20inquiring%20about%20a%20package%20bus%20booking" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.08c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.14 8.14 0 0 1-1.25-4.32c0-4.51 3.67-8.18 8.18-8.18 2.19 0 4.24.85 5.79 2.4a8.13 8.13 0 0 1 2.39 5.78c0 4.51-3.67 8.18-8.18 8.18zm4.49-6.13c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+    <span>Inquiry submitted! Our travel coordinator will contact you shortly.</span>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // State for interactive calculator
+    let calcState = {
+      eventType: 'party',
+      busSize: 35,
+      duration: 12,
+      addons: {
+        audio: true,
+        decor: false,
+        cooler: true,
+        stops: false
+      }
+    };
+
+    // Base pricing matrix
+    const baseRates = {
+      party: { 20: 12000, 35: 16000, 50: 21000 },
+      wedding: { 20: 13000, 35: 18000, 50: 23000 },
+      corporate: { 20: 11000, 35: 15000, 50: 20000 },
+      tour: { 20: 14000, 35: 19000, 50: 25000 }
+    };
+
+    const durationMultipliers = {
+      6: 0.85,
+      12: 1.0,
+      24: 1.75
+    };
+
+    const addonCosts = {
+      audio: 2000,
+      decor: 2500,
+      cooler: 1000,
+      stops: 1500
+    };
+
+    const eventNames = {
+      party: 'Party Bus Package',
+      wedding: 'Wedding & Gala Shuttle',
+      corporate: 'Corporate Retreat Coach',
+      tour: 'Weekend Getaway Tour'
+    };
+
+    function selectEvent(type, el) {
+      calcState.eventType = type;
+      document.querySelectorAll('#eventTypeGrid .select-pill').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      updateCalc();
+    }
+
+    function selectSize(size, el) {
+      calcState.busSize = size;
+      document.querySelectorAll('#busSizeGrid .select-pill').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      updateCalc();
+    }
+
+    function selectDuration(hours, el) {
+      calcState.duration = hours;
+      document.querySelectorAll('#durationGrid .select-pill').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      updateCalc();
+    }
+
+    function setCalcPreset(type, size, duration) {
+      calcState.eventType = type;
+      calcState.busSize = size;
+      calcState.duration = duration;
+
+      // Update pills
+      document.querySelectorAll('#eventTypeGrid .select-pill').forEach(p => {
+        p.classList.toggle('active', p.getAttribute('data-type') === type);
+      });
+      document.querySelectorAll('#busSizeGrid .select-pill').forEach(p => {
+        p.classList.toggle('active', parseInt(p.getAttribute('data-size')) === size);
+      });
+      document.querySelectorAll('#durationGrid .select-pill').forEach(p => {
+        p.classList.toggle('active', parseInt(p.getAttribute('data-duration')) === duration);
+      });
+
+      updateCalc();
+    }
+
+    function updateCalc() {
+      calcState.addons.audio = document.getElementById('addonAudio').checked;
+      calcState.addons.decor = document.getElementById('addonDecor').checked;
+      calcState.addons.cooler = document.getElementById('addonCooler').checked;
+      calcState.addons.stops = document.getElementById('addonStops').checked;
+
+      const base = baseRates[calcState.eventType][calcState.busSize];
+      const mult = durationMultipliers[calcState.duration];
+      let total = Math.round(base * mult);
+
+      if (calcState.addons.audio) total += addonCosts.audio;
+      if (calcState.addons.decor) total += addonCosts.decor;
+      if (calcState.addons.cooler) total += addonCosts.cooler;
+      if (calcState.addons.stops) total += addonCosts.stops;
+
+      // Format currency
+      document.getElementById('calcPriceDisplay').innerText = '₹' + total.toLocaleString('en-IN');
+      document.getElementById('resultPackageName').innerText = `${eventNames[calcState.eventType]} (${calcState.busSize} Seater • ${calcState.duration}h)`;
+    }
+
+    function bookViaWhatsApp() {
+      const price = document.getElementById('calcPriceDisplay').innerText;
+      const pkg = document.getElementById('resultPackageName').innerText;
+      const message = `Hello Anand Travels! I customized a quote on your website for the ${pkg} at an estimated rate of ${price}. Could you check bus availability for my event date?`;
+      const url = `https://wa.me/919822000000?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    // FAQ Accordion
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(f => {
+        f.classList.remove('open');
+        f.querySelector('.faq-answer').style.maxHeight = null;
+      });
+
+      if (!isOpen) {
+        item.classList.add('open');
+        const answer = item.querySelector('.faq-answer');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+
+    // Mobile Hamburger
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-active');
+      });
+    });
+
+    // Form submission
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const phone = document.getElementById('formPhone').value;
+      const date = document.getElementById('formDate').value;
+      const eventType = document.getElementById('formEventType').value;
+      const guests = document.getElementById('formGuests').value;
+      const city = document.getElementById('formCity').value;
+
+      const toast = document.getElementById('toastNotice');
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4500);
+
+      // Optional WhatsApp forwarding for high conversion
+      const forwardWhatsApp = confirm(`Thanks ${name}! Would you also like to open WhatsApp to send these details directly to Anand Travels for immediate confirmation?`);
+      if (forwardWhatsApp) {
+        const msg = `Hi Anand Travels! I submitted a booking request on your site:%0A- Name: ${name}%0A- Phone: ${phone}%0A- Date: ${date}%0A- Event: ${eventType}%0A- Guests: ${guests}%0A- Location: ${city}`;
+        window.open(`https://wa.me/919822000000?text=${msg}`, '_blank');
+      }
+
+      document.getElementById('bookingForm').reset();
+    }
+
+    // Set minimum date for booking to today
+    document.addEventListener('DOMContentLoaded', () => {
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('formDate');
+      if (dateInput) {
+        dateInput.min = today;
+      }
+      updateCalc();
+    });
+  </script>
+</body>
+</html>
